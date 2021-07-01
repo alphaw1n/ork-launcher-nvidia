@@ -1,4 +1,4 @@
-FROM nvidia/opengl:base-ubuntu18.04
+FROM nvidia/opengl:base
 
 RUN apt update; \
     apt install -y \
