@@ -11,6 +11,7 @@ RUN apt update; \
     libopengl0 \
     mesa-utils \
     alsa-utils \
-    gdb
+    gdb \
+    libdwarf1
 
 WORKDIR /opt
