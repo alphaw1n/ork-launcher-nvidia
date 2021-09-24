@@ -34,4 +34,4 @@ jobs:
       run: docker build . --file Dockerfile-$UBUNTU_VERSION --tag ${{secrets.DOCKER_USER}}/ork-launcher-nvidia:latest --tag ${{secrets.DOCKER_USER}}/ork-launcher-nvidia:$UBUNTU_VERSION --tag ${{secrets.DOCKER_USER}}/ork-launcher-nvidia:$(date +%s)
 
     - name: Docker Push
-      run: docker push ${{secrets.DOCKER_USER}}/ork-launcher-nvidia
+      run: docker push ${{secrets.DOCKER_USER}}/ork-launcher-nvidia:latest ${{secrets.DOCKER_USER}}/ork-launcher-nvidia:18.04 ${{secrets.DOCKER_USER}}/ork-launcher-nvidia:20.04
