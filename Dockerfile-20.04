@@ -7,6 +7,7 @@ RUN apt update; \
     libglfw3 \
     libgcrypt20 \
     gstreamer1.0-plugins-good \
+    gstreamer1.0-plugins-bad \
     gstreamer1.0-libav \
     libopengl0 \
     mesa-utils \
